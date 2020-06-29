@@ -16,7 +16,7 @@ const Details = ({ data: { avatar, name, details: { city, company, position } } 
 };
 
 Details.propTypes = {
-    props: PropTypes({
+    props: PropTypes.shape({
         data: PropTypes.shape({
             avatar: PropTypes.string,
             name: PropTypes.string,

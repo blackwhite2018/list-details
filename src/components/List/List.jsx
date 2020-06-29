@@ -5,7 +5,7 @@ import Item from './Item/Item';
 const List = ({ list, getDataProfile }) => {
     const items = list.map(({ id, name }) => <Item key={ id } getDataProfile={ getDataProfile } id={ id } value={ name } />)
     return (
-        <ul>{ items }</ul>
+        <ul className="list">{ items }</ul>
     );
 };
 
