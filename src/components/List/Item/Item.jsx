@@ -7,8 +7,8 @@ const Item = ({ id, value, getDataProfile }) => {
     };
 
     return (
-        <li className="list__item">
-            <button type="button" className="btn" data-id={ id } onClick={ handleClick }>{ value }</button>
+        <li className="list__item" data-id={ id } onClick={ handleClick }>
+            { value }
         </li>
     );
 };
